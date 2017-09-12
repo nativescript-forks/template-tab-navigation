@@ -1,9 +1,7 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page"
   xmlns:home="/tabs/home"
   xmlns:search="/tabs/search"
-  xmlns:browse="/tabs/browse"
-  xmlns:featured="/tabs/featured"
-  xmlns:settings="/tabs/settings">
+  xmlns:browse="/tabs/browse">
     <Page.actionBar>
         <ActionBar class="action-bar">
           <Label text="{{ title }}" class="action-bar-title" />
@@ -45,17 +43,6 @@
           </TabViewItem.view>
         </TabViewItem>
 
-        <TabViewItem title="Featured" iconSource="{{ iconPath + 'favorites'}}">
-          <TabViewItem.view>
-             <featured:FeaturedView/>
-          </TabViewItem.view>
-        </TabViewItem>
-
-        <TabViewItem title="Settings" iconSource="{{ iconPath + 'settings'}}">
-          <TabViewItem.view>
-             <settings:SettingsView/>
-          </TabViewItem.view>
-        </TabViewItem>
       </TabView.items>
     </TabView> 
 </Page>
